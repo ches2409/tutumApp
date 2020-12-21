@@ -1,0 +1,86 @@
+<ion-content>
+    <div class="wrapper">
+        <div class="wrapper__encabezado">
+            <div class="wrapper__encabezado--logo">
+            </div>
+        </div>
+
+        <div class="wrapper__negro"></div>
+        <div class="wrapper__arriba"></div>
+        <div class="wrapper__abajo"></div>
+
+        <div class="wrapper__container">
+            <div class="wrapper__container--content">
+                
+                <h4 class="titulo">Iniciar Sesión</h4>
+                
+                <ion-grid class="btnRedes">
+                    <ion-row>
+                        
+                        <ion-col>
+                            <button class="button button-clear">
+                                <img src="../../../assets/img/google.svg" width="60" alt="">
+                            </button>
+                        </ion-col>
+                
+                        <ion-col>
+                            <button class="button button-clear">
+                                <img src="../../../assets/img/facebook.svg" width="60" alt="">
+                            </button>
+                        </ion-col>
+
+                    </ion-row>
+                </ion-grid>
+                <div class="datos">
+
+                    <ion-grid>
+                        <ion-row>
+                            
+                            <ion-col size="12">
+                                <ion-input class="entradaForm entradaMail" type="text" id="inp" placeholder="E-mail"></ion-input>
+                            </ion-col>
+                            
+                            <ion-col size="10">
+                                <ion-input class="entradaForm entradaPass" type="password" id="inp" placeholder="Contraseña"></ion-input>
+                            </ion-col>
+                            
+                            <ion-col size="2">
+                                <button class="button">
+                                    <ion-icon class="eye" name="eye" id="eye"></ion-icon>
+                                </button>
+                            </ion-col>
+
+                        </ion-row>
+                    </ion-grid>
+                </div>
+                <ion-grid class="btnActions">
+                    
+                    <ion-col>
+            
+                        <button class="button btn btnAtras" [routerLink]="['/home']" id="btact1">
+        
+                            <span class="icoElipse">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                            </span>
+        
+                            <span class="btnText">Cancelar</span>
+                        </button>
+
+                    </ion-col>
+            
+                    <ion-col>
+            
+                        <button class="button btn btnAdelante" fill="clear" [routerLink]="['/principal']" id="btact2">
+                            <span class="btnText">Ingresar</span>
+                            <span class="icoElipse">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </button>
+            
+                    </ion-col>
+                </ion-grid>
+            </div>
+        </div>
+    </div>
+
+</ion-content>
